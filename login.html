@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show More/Show Less Example</title>
+<style>
+  #moreContent {
+    display: none; /* Hide the extra content initially */
+  }
+</style>
+</head>
+<body>
+
+<div id="mainContent">
+  <p>This is the main content.</p>
+  <div id="moreContent">
+    <p>This is additional content that will be shown when the user clicks "Show more".</p>
+  </div>
+  <button onclick="showMore()">Show more</button>
+  <button onclick="showLess()">Show less</button>
+</div>
+
+<script>
+  function showMore() {
+    document.getElementById("moreContent").style.display = "block";
+  }
+
+  function showLess() {
+    document.getElementById("moreContent").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
